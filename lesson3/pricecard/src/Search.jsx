@@ -1,3 +1,5 @@
+import React from "react";
+
 export default function Greeting(props) {
   const element = (
     <div className="search">
