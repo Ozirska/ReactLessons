@@ -14,8 +14,8 @@ const countYers = (date) => {
 const Greeting = (props) => {
   return (
     <div className="greeting">
-      My name is {props.user.firstName} {props.user.lastName}. I am{" "}
-      {countYers(props.user.birthDate)} years old
+      My name is {props.firstName} {props.lastName}. I am{" "}
+      {countYers(props.birthDate)} years old
     </div>
   );
 };
