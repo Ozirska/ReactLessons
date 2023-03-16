@@ -14,8 +14,9 @@ const getTimeWithOffset = (offset) => {
 class Clock extends Component {
   constructor(props) {
     super(props);
+
     this.state = {
-      time: "00:00:00",
+      time: moment(getTimeWithOffset(this.props.offset)).format("LTS"),
     };
 
     //do Not
