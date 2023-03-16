@@ -1,6 +1,7 @@
 import { Component } from "react";
 import React from "react";
 import "./clock.scss";
+import moment from "moment";
 
 const getTimeWithOffset = (offset) => {
   const currentTime = new Date();
@@ -23,7 +24,7 @@ class Clock extends Component {
     setInterval(() => {
       let getTime = getTimeWithOffset(this.state.offset);
       this.setState({
-        time: getTime.toLocaleTimeString(),
+        time: moment(getTime).format("LTS"),
       });
     }, 1000);
   }
