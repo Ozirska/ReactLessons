@@ -1,7 +1,8 @@
 {
-  "name": "task2",
+  "name": "task3",
   "version": "1.0.0",
-  "main": "webpack.config.js",
+  "description": "",
+  "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server -d --devtool eval-source-maps --open",
     "build": "webpack -p"
