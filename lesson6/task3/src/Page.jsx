@@ -8,19 +8,19 @@ class Page extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      text: null,
+      info: null,
     };
   }
 
-  setText = (text) => {
+  setText = (info) => {
     this.setState({
-      text,
+      info,
     });
   };
   render() {
     return (
       <div className="page">
-        <Info info={this.state.text} />
+        <Info info={this.state.info} />
         <div className="actions">
           <button
             className="btn"
