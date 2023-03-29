@@ -6,13 +6,13 @@ class Status extends Component {
   constructor(props) {
     super(props);
 
-    this.state = { status: props.status };
+    this.state = { isOnline: props.status };
   }
 
   render() {
     return (
       <div className="status">
-        {this.state.status ? <Online /> : <Offline />}
+        {this.state.isOnline ? <Online /> : <Offline />}
       </div>
     );
   }
