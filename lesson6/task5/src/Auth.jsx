@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Login from "./Login.jsx";
 import Logout from "./Logout.jsx";
-import Spiner from "./Spiner.jsx";
+import Spinner from "./Spinner.jsx";
 
 class Auth extends Component {
   constructor() {
@@ -30,7 +30,7 @@ class Auth extends Component {
   render() {
     return (
       <div>
-        <Spiner display={this.state.displaySpiner} size={40} />
+        <Spinner display={this.state.displaySpiner} size={40} />
         {this.state.log ? (
           <Login
             display={this.state.displayBtn}

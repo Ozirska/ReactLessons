@@ -1,6 +1,6 @@
 import React from "react";
 
-const Spiner = (styles) => {
+const Spinner = (styles) => {
   return (
     <span
       className="spinner"
@@ -12,4 +12,4 @@ const Spiner = (styles) => {
   );
 };
 
-export default Spiner;
+export default Spinner;
