@@ -12,11 +12,11 @@ class Page extends Component {
     };
   }
 
-  setText = (text) => {
-    if (text === "") return;
+  setText = (info) => {
+    if (info === "") return;
 
     this.setState({
-      info: text,
+      info,
     });
   };
   render() {
@@ -30,7 +30,7 @@ class Page extends Component {
           <button className="btn" onClick={() => this.setText(text2)}>
             IPhone 13 Pro
           </button>
-          <button className="btn" onClick={() => this.setText(null)}>
+          <button className="btn" onClick={() => this.setText("")}>
             Clear
           </button>
         </div>
