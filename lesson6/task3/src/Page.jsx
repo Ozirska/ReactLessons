@@ -25,7 +25,7 @@ class Page extends Component {
           <button className="btn" onClick={() => this.setText(text2)}>
             IPhone 13 Pro
           </button>
-          <button className="btn" onClick={() => this.setText("")}>
+          <button className="btn" onClick={() => this.setText(null)}>
             Clear
           </button>
         </div>
