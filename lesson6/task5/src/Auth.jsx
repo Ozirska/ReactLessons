@@ -16,11 +16,11 @@ class Auth extends Component {
       displayBtn: false,
     });
     setTimeout(() => {
-      this.setState((prevState) => ({
-        log: !prevState.log,
+      this.setState({
+        log: true,
         displaySpiner: false,
         displayBtn: true,
-      }));
+      });
     }, 2000);
   }
   clickBtnOut() {
