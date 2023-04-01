@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Info from "./Info.jsx";
 
 // const text1 = "Price is 500$.Available in 2 colors";
-const text2 = "Price is 650$.Not available in 1 color";
+// const text2 = "Price is 650$.Not available in 1 color";
 
 class Page extends Component {
   constructor(props) {
@@ -24,11 +24,16 @@ class Page extends Component {
         <div className="actions">
           <button
             className="btn"
-            onClick={() => this.setText("Price is 500$.Available in 2 colors")}
+            onClick={() => this.setText("Price is 500$. Available in 2 colors")}
           >
             IPhone 13
           </button>
-          <button className="btn" onClick={() => this.setText(text2)}>
+          <button
+            className="btn"
+            onClick={() =>
+              this.setText("Price is 650$. Not available in 1 color")
+            }
+          >
             IPhone 13 Pro
           </button>
           <button className="btn" onClick={() => this.setText(null)}>
