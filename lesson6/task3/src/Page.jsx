@@ -14,7 +14,7 @@ class Page extends Component {
 
   setText = (info) => {
     this.setState({
-      info,
+      info: info,
     });
   };
   render() {
