@@ -23,20 +23,27 @@ class Auth extends Component {
       }));
     }, 2000);
   }
+  clickBtnOut() {
+    this.setState({
+      log: true,
+    });
+  }
 
   render() {
     return (
       <div>
-        <Spinner display={this.state.displaySpiner} size={40} />
         {this.state.log ? (
-          <Login
-            display={this.state.displayBtn}
-            onLogin={() => this.clickBtn()}
-          />
+          <>
+            <Spinner display={this.state.displaySpiner} size={40} />
+            <Login
+              display={this.state.displayBtn}
+              onLogin={() => this.clickBtn()}
+            />
+          </>
         ) : (
           <Logout
             display={this.state.displayBtn}
-            onLogout={() => this.clickBtn()}
+            onLogout={() => this.clickBtnOut()}
           />
         )}
       </div>
