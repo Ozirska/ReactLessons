@@ -13,6 +13,7 @@ class Page extends Component {
   }
 
   setText = (info) => {
+    if (!info) return;
     this.setState({
       info,
     });
