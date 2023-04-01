@@ -4,14 +4,11 @@ import Logout from "./Logout.jsx";
 import Spinner from "./Spinner.jsx";
 
 class Auth extends Component {
-  constructor() {
-    super();
-    this.state = {
-      log: true,
-      displaySpiner: false,
-      displayBtn: true,
-    };
-  }
+  state = {
+    log: true,
+    displaySpiner: false,
+    displayBtn: true,
+  };
 
   clickBtn() {
     this.setState({
