@@ -5,16 +5,11 @@ const text1 = "Price is 500$. Available in 2 colors";
 const text2 = "Price is 650$. Not available in 1 color";
 
 class Page extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      info: null,
-    };
-  }
+  state = {
+    info: null,
+  };
 
   setText = (info) => {
-    if (info === "") return;
-
     this.setState({
       info,
     });
