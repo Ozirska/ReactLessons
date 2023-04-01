@@ -13,7 +13,7 @@ class Page extends Component {
   }
 
   setText = (info) => {
-    if (info === "") return;
+    if (info === "") return null;
 
     this.setState({
       info,
